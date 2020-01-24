@@ -6,9 +6,9 @@ import './video-react.css';
 interface IProps {
     url: string;
 };
-interface IState {};
+//interface IState {};
 
-class VideoPlayer extends Component< IProps, IState > {
+class VideoPlayer extends Component< IProps, {} > {
 
     /*constructor( props: IProps) {
         super(props);
@@ -19,7 +19,7 @@ class VideoPlayer extends Component< IProps, IState > {
             <div className="video-container">
                 <h1>Reproductor</h1>
                 <Player
-                    src={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
+                    src={this.props.url}
                     fluid={true}
                 />
                     

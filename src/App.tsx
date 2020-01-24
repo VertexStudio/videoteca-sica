@@ -3,7 +3,8 @@ import {
   IonApp,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import VideoPlayer from './pages/video/player/Player';
+//import VideoPlayer from './pages/video/player/Player';
+import Header from './pages/home/header/Jumbotron';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -27,7 +28,7 @@ import './theme/variables.css';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-     <VideoPlayer url={"this is a URL"}/>
+     <Header/>
     </IonReactRouter>
   </IonApp>
 );
