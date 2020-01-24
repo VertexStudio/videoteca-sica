@@ -15,10 +15,7 @@ import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
 
-/* Optional CSS utils that can be commented out */<CardExample text="Cupidatat veniam incididunt occaecat aliquip id dolor quis consectetur duis nulla aliqua laboris. Do proident nulla sint consequat fugiat magna aliqua dolore esse deserunt elit mollit ipsum ea. Ipsum ad incididunt ut labore eiusmod sint excepteur dolor qui est velit. Ut laborum qui do ea eiusmod eu sint quis. Quis amet sint reprehenderit laboris qui. Nisi nostrud magna id voluptate qui eiusmod qui culpa."
-                thumbnail="cardvideo"
-                cardDescription="cardDescriptionVideo"
-                title="papa1" subtittle="patata" url='http://qnimate.com/wp-content/uploads/2014/03/images2.jpg'  />
+/* Optional CSS utils that can be commented out */
 import '@ionic/react/css/padding.css';
 import '@ionic/react/css/float-elements.css';
 import '@ionic/react/css/text-alignment.css';
@@ -28,6 +25,9 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import CardExample from './Home/Card/card'
+import ArrayCard from "./Home/ArrayCard/ArrayCardAndList"
+
 
 
 
@@ -36,7 +36,9 @@ const App: React.FC = () => (
 
   <IonApp>
     <IonReactRouter>
-     <SearchBar/>
+
+    <ArrayCard></ArrayCard>
+
     </IonReactRouter>
   </IonApp>
 );

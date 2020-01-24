@@ -11,7 +11,7 @@ interface IProps {
     subtittle:string ;
     text:string;
     thumbnail:string;
-    cardDescription:string
+    CardDescriptionStyle:string
 };
 
 
@@ -23,7 +23,7 @@ class CardExample extends Component < IProps, {} > {
           
                 <div className="cardDiv">
                     <img alt="GG" src={this.props.url } className ={this.props.thumbnail}/>
-                    <div className={this.props.cardDescription}>
+                    <div className={this.props.CardDescriptionStyle}>
                         <IonCardSubtitle  className="subtittle">{this.props.subtittle}</IonCardSubtitle>
                         <IonCardTitle className="tittle">{this.props.title}</IonCardTitle>
                         <p className="textStyle"> {this.props.text} </p>
