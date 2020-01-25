@@ -3,9 +3,8 @@ import {
   IonApp,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-//import VideoPlayer from './pages/video/player/Player';
-//import Header from './pages/home/header/Jumbotron';
-import SearchBar from './pages/home/search/SearchBar';
+
+import Home from "./pages/home/Main";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,13 +22,6 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
-/* Theme variables */
-import './theme/variables.css';
-import CardExample from './Home/Card/card'
-import ArrayCard from "./Home/ArrayCard/ArrayCardAndList"
-
-
-
 
 const App: React.FC = () => (
 
@@ -37,8 +29,7 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
 
-    <ArrayCard></ArrayCard>
-
+    <Home></Home>
     </IonReactRouter>
   </IonApp>
 );

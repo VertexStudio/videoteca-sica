@@ -7,17 +7,9 @@ export default interface IVideo {
     image: string,
 }
 
-/***
- * // Las categorias
- * render(
- *  cardone>
- * cardtwo>
- * cardthree>
- * )
- */
-
-
- /**
-  * // los videos
-  * 
-  */
+export interface ICard {
+    title: string,
+    subtitle: string,
+    url: string,
+    
+}

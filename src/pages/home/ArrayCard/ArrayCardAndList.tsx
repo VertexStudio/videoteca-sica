@@ -4,16 +4,11 @@ import React, { Component} from 'react';
 let CardArray: number[]= [1,2,3]
 
 interface IProps {
-    url: string;
-    title: string;
-    subtittle:string ;
-    text:string;
-    thumbnail:string;
-    CardDescriptionStyle:string
-};
-const rankingListData: JSX.Element[] = []
 
-class ArrayCard extends Component {
+};
+const cardData: JSX.Element[] = []
+
+class ArrayCard extends Component<IProps, {}> {
     
     
 
@@ -21,7 +16,7 @@ class ArrayCard extends Component {
 
         CardArray.forEach( (card) => {
         
-            rankingListData.push(
+            cardData.push(
                 <CardExample
                 url='http://qnimate.com/wp-content/uploads/2014/03/images2.jpg'  
                 title="papa"
@@ -39,7 +34,7 @@ class ArrayCard extends Component {
         
         )
 
-        return(rankingListData);
+        return(cardData);
     }
 }
 
