@@ -1,0 +1,10 @@
+body{
+    position:initial !important;
+    overflow: initial;   
+}
+
+ion-app{
+    contain:none !important;
+    overflow: initial !important;
+    display: block !important;
+}

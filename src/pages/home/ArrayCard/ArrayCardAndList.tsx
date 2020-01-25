@@ -1,7 +1,7 @@
 import CardExample from "../Card/card";
 import React, { Component} from 'react';
 
-let CardArray: number[]= [1,2,3]
+let CardArray: number[]= [1,2,3,4,5,6,7]
 
 interface IProps {
 
