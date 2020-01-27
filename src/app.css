@@ -1,6 +1,11 @@
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+
 body{
     position:initial !important;
     overflow: initial;   
+    background-color: #fdfdfd;
 }
 
 ion-app{
@@ -8,3 +13,8 @@ ion-app{
     overflow: initial !important;
     display: block !important;
 }
+
+.jumbotron{
+    background-color: #eeeeee;
+}
+

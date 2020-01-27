@@ -17,12 +17,19 @@
     
     /*border-radius: 25px;    */
     border:solid #1f1d1d65 ;
+    border-radius: 30px;
     
   }
 
   .cardThumbnail{
       width:100%;
       height:auto;
+      border-radius: 25px 25px 25px 25px;
+  }
+
+  img{
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
   }
 
   .cardDescription{
