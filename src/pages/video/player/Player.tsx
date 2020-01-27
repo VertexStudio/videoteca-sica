@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {Player} from 'video-react';
 import "./Player.css"
 import './video-react.css';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 //import currentVideo from "./assets/scene1.mp4";
 
 interface IProps {
@@ -20,6 +21,12 @@ class VideoPlayer extends Component< IProps, {} > {
         console.log(this.props.url);
         return(
             <div className="video-container">
+                
+                    
+                    <img src="https://wallpaperaccess.com/full/391242.jpg"></img>
+                
+
+
                 <h1>Reproductor</h1>
                 <Player
                     src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"

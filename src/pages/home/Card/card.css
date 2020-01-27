@@ -24,12 +24,12 @@
   .cardThumbnail{
       width:100%;
       height:auto;
-      border-radius: 25px 25px 25px 25px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
   }
 
   img{
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
+  
   }
 
   .cardDescription{

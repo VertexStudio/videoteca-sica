@@ -10,7 +10,7 @@ interface IProps {
     title: string;
     subtittle:string ;
     text:string;
-    thumbnail:string;
+    
     CardDescriptionStyle: string;
     videoId: string;
     onShowVideo: (video: string) => void | undefined;
@@ -30,13 +30,8 @@ class CardExample extends Component < IProps, {} > {
 
         return(
           
-<<<<<<< HEAD
-                <div className="cardDiv">
-                    <img  alt="GG" src={this.props.url } className ={this.props.thumbnail}/>
-=======
                 <div className="cardDiv" onClick={this.handleClick}>
-                    <img alt="To show a draw" src={this.props.url } className ={this.props.thumbnail}/>
->>>>>>> e66ccef84b2fafd907e0eab8a4d7cc348b92c56b
+                    <img alt="To show a draw" src={this.props.url } className ="cardThumbnail"/>
                     <div className={this.props.CardDescriptionStyle}>
                         <IonCardSubtitle  className="subtittle">{this.props.subtittle}</IonCardSubtitle>
                         <IonCardTitle className="tittle">{this.props.title}</IonCardTitle>
