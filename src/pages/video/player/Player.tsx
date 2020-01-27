@@ -17,6 +17,7 @@ class VideoPlayer extends Component< IProps, {} > {
     }*/
 
     render(){
+        console.log(this.props.url);
         return(
             <div className="video-container">
                 <h1>Reproductor</h1>

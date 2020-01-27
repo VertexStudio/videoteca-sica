@@ -11,18 +11,27 @@ interface IProps {
     subtittle:string ;
     text:string;
     thumbnail:string;
-    CardDescriptionStyle:string
+    CardDescriptionStyle: string;
+    videoId: string;
+    onShowVideo: (video: string) => void | undefined;
 };
 
 
 class CardExample extends Component < IProps, {} > {
 //  "http://qnimate.com/wp-content/uploads/2014/03/images2.jpg"
+
+
+    private handleClick = () => {
+        this.props.onShowVideo(this.props.videoId);
+    }
+
+
     render(){
 
         return(
           
-                <div className="cardDiv">
-                    <img height="250" width="300" alt="GG" src={this.props.url } className ={this.props.thumbnail}/>
+                <div className="cardDiv" onClick={this.handleClick}>
+                    <img alt="To show a draw" src={this.props.url } className ={this.props.thumbnail}/>
                     <div className={this.props.CardDescriptionStyle}>
                         <IonCardSubtitle  className="subtittle">{this.props.subtittle}</IonCardSubtitle>
                         <IonCardTitle className="tittle">{this.props.title}</IonCardTitle>
