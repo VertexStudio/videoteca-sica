@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import {Player} from 'video-react';
 import "./Player.css"
 import './video-react.css';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-//import currentVideo from "./assets/scene1.mp4";
+import getModule from "./Switch";
 
 interface IProps {
     url: string;
@@ -13,12 +12,25 @@ interface IProps {
 
 class VideoPlayer extends Component< IProps, {} > {
 
+    private videoToPlay = "";
+
     /*constructor( props: IProps) {
         super(props);
     }*/
 
+
+    // private importVideo = () => {
+    //     const path = videoList[this.props.url]
+    //     console.log(path)
+    //     import(path).then(video => {
+    //         this.videoToPlay = video;
+    //     })
+        
+    // }
+
     render(){
-        console.log(this.props.url);
+        this.videoToPlay = getModule(this.props.url) as string;
+        
         return(
             <div className="video-container">
                 
@@ -29,7 +41,7 @@ class VideoPlayer extends Component< IProps, {} > {
 
                 <h1>Reproductor</h1>
                 <Player
-                    src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                    src={this.videoToPlay}
                     fluid={true}
                 />
                 <button onClick={this.props.onClose}>Close</button>
