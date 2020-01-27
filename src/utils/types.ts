@@ -1,10 +1,5 @@
 export default interface IVideo {
-    id: number,
-    title: string,
-    src: string,
-    description: string
-    tags: string[],
-    image: string,
+    [key: string]: string
 }
 
 export interface ICard {
