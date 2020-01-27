@@ -1,4 +1,22 @@
 .video-container {
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.LogoVideo{
+    width: 30%;
+    height:auto;
+    margin: 2% 35% 2% 35%;
+}
+
+.Partner{
+    width: 60%;
+    height:auto;
+    margin: 0% 20% 2% 20%;
+}
+
+.ImgText{
+    width: 50%;
+    height:auto;
+    margin: 0% 25% 2% 25%;
 }
