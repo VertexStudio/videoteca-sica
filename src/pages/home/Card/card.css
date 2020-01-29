@@ -9,16 +9,30 @@
 .cardDiv{
     display: inline-block;
     text-align: center;
-    height:auto;
+    height:28vh;
     width:30%;
     margin: 10px 1.66%;
     /* margin-left: 10vw;
     margin-right: 10vw; */
     
     /*border-radius: 25px;    */
-    border:solid #1f1d1d65 ;
-    border-radius: 30px;
+    /*border:solid #1f1d1d65 ;*/
+    border-radius: 30px;    
+  }
+
+.cardDivEnd{
+    display: inline-block;
+    text-align: center;
+    height:28vh;
+    width:30%;
+    margin: 10px 1.66%;
+    margin-left: 19%;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
     
+    /*border-radius: 25px;    */
+    /*border:solid #1f1d1d65 ;*/
+    border-radius: 30px;    
   }
 
   .cardThumbnail{
@@ -33,9 +47,9 @@
   }
 
   .cardDescription{
-    display: inline;
-    width:60%;
-    height: auto;
+    display: block;
+    width:100%;
+    
 }
 
 
@@ -51,19 +65,30 @@
 }
 
 .tittle{
-    font-size: 48px ;
+    font-size: 24px ;
     font-weight: 600;
-    color: black;
+    color: #606060;
     /*letter-spacing: 6px;*/
     font-style: oblique;
+    display: flex;
 }
 
 .subtittle{
-
     font-size: 36px;
     font-weight: 400 ;
     color: #1f1d1d65;
     /*letter-spacing: px;*/
-    font-style: oblique;
-    
+    font-style: oblique;    
 }
+
+@media only screen and (max-height: 800px) {
+    .subtittle{
+        font-size: 14px;         
+    }
+    .tittle{
+        font-size: 16px ;     
+    }
+    .textStyle{        
+        font-size: 12px;
+    }  
+  }

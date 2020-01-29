@@ -6,11 +6,11 @@ import './card.css'
 
 
 interface IProps {
-    url: string;
+    url: any;
     title: string;
-    subtittle:string ;
-    text:string;
-    
+    //subtittle:string ;
+    //text:string;
+    cardStyle:string;
     CardDescriptionStyle: string;
     videoId: string;
     onShowVideo: (video: string) => void | undefined;
@@ -27,15 +27,17 @@ class CardExample extends Component < IProps, {} > {
 
 
     render(){
+        //<IonCardSubtitle  className="subtittle">{this.props.subtittle}</IonCardSubtitle>
+          //              <p className="textStyle"> {this.props.text} </p>
 
         return(
           
-                <div className="cardDiv" onClick={this.handleClick}>
+                <div className={this.props.cardStyle} onClick={this.handleClick}>
                     <img alt="To show a draw" src={this.props.url } className ="cardThumbnail"/>
                     <div className={this.props.CardDescriptionStyle}>
-                        <IonCardSubtitle  className="subtittle">{this.props.subtittle}</IonCardSubtitle>
-                        <IonCardTitle className="tittle">{this.props.title}</IonCardTitle>
-                        <p className="textStyle"> {this.props.text} </p>
+                        
+                        <p className="tittle">{this.props.title}</p>
+                        
                     </div>
                 </div>
          

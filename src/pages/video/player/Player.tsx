@@ -34,13 +34,17 @@ class VideoPlayer extends Component< IProps, {} > {
         
         return(
             <div className="video-container">                    
+                    <button onClick={this.props.onClose} className="backbutton">Regresar</button>
+                    
                     <img src="https://wallpaperaccess.com/full/391242.jpg" className="LogoVideo"></img>
                 
                 <Player
                     src={this.videoToPlay}
                     fluid={true}
                 />
-                <button onClick={this.props.onClose}>Regresar</button>
+                
+                
+                
 
                 <img src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>
                 <img src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>

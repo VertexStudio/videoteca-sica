@@ -20,3 +20,23 @@
     height:auto;
     margin: 0% 25% 2% 25%;
 }
+
+.backbutton{
+    background-color: red;
+    height: 100px;
+    width:200px;
+    position:absolute;
+    border-radius: 50px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+/*.BackButton{
+    width:33.33%;
+    height: 400px;
+    margin: 0% 33.33%;
+    background-image: url("../../../assets/x.png");
+    background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}*/

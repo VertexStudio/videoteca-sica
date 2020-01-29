@@ -31,6 +31,8 @@ const App: React.FC = () => (
     <IonReactRouter>
 
     <Home></Home>
+
+    
     </IonReactRouter>
   </IonApp>
 );
