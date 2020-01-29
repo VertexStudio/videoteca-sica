@@ -50,8 +50,9 @@ class Home extends Component<{}, IMainState>{
         return(
             <div id="container">
                 <Jumbotron />
-              
-                <Card 
+                <Carousel >
+                    <CarouselItem>
+                    <Card 
                     //url="https://en.es-static.us/upl/2016/02/M42-Orion-Nebula-2-5-2016.jpg" 
                     url={Image1 }
                     title="Pilar Fortalecimiento Institucional" 
@@ -60,43 +61,78 @@ class Home extends Component<{}, IMainState>{
                     CardDescriptionStyle="cardDescription"
                     videoId="1"
                     onShowVideo={this.showVideo} />
-                <Card 
-                    //url="https://opengameart.org/sites/default/files/sun.png" 
-                    url={Image2}
-                    title="Pilar de Integración Económica" 
-                    //subtittle="Helios, Ra..." text="A example text" 
-                    cardStyle="cardDiv"
+                    <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                    </CarouselItem>
                     
-                    CardDescriptionStyle="cardDescription"
-                    videoId="2"
-                    onShowVideo={this.showVideo} />
-                <Card 
-                    //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
-                    url={Image3}
-                    title="Pilar de Integración Social
-                    " //subtittle="Andromeda " text="This galaxy" 
-                    cardStyle="cardDiv"
-                    CardDescriptionStyle="cardDescription"
-                    videoId="3"
-                    onShowVideo={this.showVideo} />
-                <Card 
-                    //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
-                    url={Image4}
-                    title="Pilar de Seguridad Democrática
-                    "// subtittle="Andromeda " text="This galaxy" 
-                    cardStyle="cardDivEnd"
-                    CardDescriptionStyle="cardDescription"
-                    videoId="4"
-                    onShowVideo={this.showVideo} />
-                <Card 
-                    //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
-                    url={Image5}
-                    title="Pilar Cambio Climático y Gestión Integral de Riesgos" 
-                    //subtittle="Andromeda " text="This galaxy" 
-                    cardStyle="cardDiv"
-                    CardDescriptionStyle="cardDescription"
-                    videoId="5"
-                    onShowVideo={this.showVideo} />
+                    <CarouselItem>
+                        <Card 
+                        //url="https://opengameart.org/sites/default/files/sun.png" 
+                        url={Image2}
+                        title="Pilar de Integración Económica" 
+                        //subtittle="Helios, Ra..." text="A example text" 
+                        cardStyle="cardDiv"
+                        
+                        CardDescriptionStyle="cardDescription"
+                        videoId="2"
+                        onShowVideo={this.showVideo} />
+                        <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Card 
+                        //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
+                        url={Image3}
+                        title="Pilar de Integración Social
+                        " //subtittle="Andromeda " text="This galaxy" 
+                        cardStyle="cardDiv"
+                        CardDescriptionStyle="cardDescription"
+                        videoId="3"
+                        onShowVideo={this.showVideo} />
+                        <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Card 
+                        //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
+                        url={Image4}
+                        title="Pilar de Seguridad Democrática
+                        "// subtittle="Andromeda " text="This galaxy" 
+                        cardStyle="cardDiv"
+                        CardDescriptionStyle="cardDescription"
+                        videoId="4"
+                        onShowVideo={this.showVideo} />
+                        <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Card 
+                        //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
+                        url={Image5}
+                        title="Pilar Cambio Climático y Gestión Integral de Riesgos" 
+                        //subtittle="Andromeda " text="This galaxy" 
+                        cardStyle="cardDiv"
+                        CardDescriptionStyle="cardDescription"
+                        videoId="5"
+                        onShowVideo={this.showVideo} />
+                        <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </CarouselItem>
+                    
+                    
+                </Carousel>
+
+                
                 <FooterIcon
                     url="https://cdn.pixabay.com/photo/2013/07/13/01/09/european-union-155207_960_720.png"
                     imgClass="footerImgClass"

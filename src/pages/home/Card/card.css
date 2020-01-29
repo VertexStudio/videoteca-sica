@@ -9,31 +9,17 @@
 .cardDiv{
     display: inline-block;
     text-align: center;
-    height:28vh;
-    width:30%;
+    height:60vh;
+    width:100%;
     margin: 10px 1.66%;
     /* margin-left: 10vw;
-    margin-right: 10vw; */
-    
+    margin-right: 10vw; */    
     /*border-radius: 25px;    */
     /*border:solid #1f1d1d65 ;*/
     border-radius: 30px;    
   }
 
-.cardDivEnd{
-    display: inline-block;
-    text-align: center;
-    height:28vh;
-    width:30%;
-    margin: 10px 1.66%;
-    margin-left: 19%;
-    /* margin-left: 10vw;
-    margin-right: 10vw; */
-    
-    /*border-radius: 25px;    */
-    /*border:solid #1f1d1d65 ;*/
-    border-radius: 30px;    
-  }
+
 
   .cardThumbnail{
       width:100%;
