@@ -7,7 +7,7 @@ import './card.css'
 
 interface IProps {
     url: any;
-    title: string;
+    //title: string;
     //subtittle:string ;
     //text:string;
     cardStyle:string;
@@ -36,7 +36,7 @@ class CardExample extends Component < IProps, {} > {
                     <img alt="To show a draw" src={this.props.url } className ="cardThumbnail"/>
                     <div className={this.props.CardDescriptionStyle}>
                         
-                        <p className="tittle">{this.props.title}</p>
+                        
                         
                     </div>
                 </div>

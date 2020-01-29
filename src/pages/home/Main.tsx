@@ -11,6 +11,7 @@ import Image4 from "./assets/Pilar4.jpg"
 import Image5 from "./assets/Pilar5.jpg"
 import Carousel from 'react-bootstrap/Carousel'
 import CarouselItem from 'react-bootstrap/CarouselItem';
+import "./Main.css"
 
 interface IMainState {
     showVideo: boolean;
@@ -52,18 +53,18 @@ class Home extends Component<{}, IMainState>{
                 <Jumbotron />
                 <Carousel >
                     <CarouselItem>
-                    <Card 
-                    //url="https://en.es-static.us/upl/2016/02/M42-Orion-Nebula-2-5-2016.jpg" 
-                    url={Image1 }
-                    title="Pilar Fortalecimiento Institucional" 
-                    //subtittle="Orion nebula" text="The orion's nebula" 
-                    cardStyle="cardDiv"
-                    CardDescriptionStyle="cardDescription"
-                    videoId="1"
-                    onShowVideo={this.showVideo} />
+                        <Card 
+                        //url="https://en.es-static.us/upl/2016/02/M42-Orion-Nebula-2-5-2016.jpg" 
+                        url={Image1 }
+                        
+                        //subtittle="Orion nebula" text="The orion's nebula" 
+                        cardStyle="cardDiv"
+                        CardDescriptionStyle="cardDescription"
+                        videoId="1"
+                        onShowVideo={this.showVideo} />
                     <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3 className="headerPillar">Pilar Fortalecimiento Institucional</h3>
+                    
                     </Carousel.Caption>
                     </CarouselItem>
                     
@@ -71,7 +72,7 @@ class Home extends Component<{}, IMainState>{
                         <Card 
                         //url="https://opengameart.org/sites/default/files/sun.png" 
                         url={Image2}
-                        title="Pilar de Integración Económica" 
+                        
                         //subtittle="Helios, Ra..." text="A example text" 
                         cardStyle="cardDiv"
                         
@@ -79,53 +80,53 @@ class Home extends Component<{}, IMainState>{
                         videoId="2"
                         onShowVideo={this.showVideo} />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="headerPillar">Pilar de Integración Económica</h3>
+                        
                         </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
                         //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
                         url={Image3}
-                        title="Pilar de Integración Social
-                        " //subtittle="Andromeda " text="This galaxy" 
+                        
+                         //subtittle="Andromeda " text="This galaxy" 
                         cardStyle="cardDiv"
                         CardDescriptionStyle="cardDescription"
                         videoId="3"
                         onShowVideo={this.showVideo} />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="headerPillar">Pilar de Integración Social</h3>
+                        
                         </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
                         //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
                         url={Image4}
-                        title="Pilar de Seguridad Democrática
-                        "// subtittle="Andromeda " text="This galaxy" 
+                        
+                        // subtittle="Andromeda " text="This galaxy" 
                         cardStyle="cardDiv"
                         CardDescriptionStyle="cardDescription"
                         videoId="4"
                         onShowVideo={this.showVideo} />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="headerPillar">Pilar de Seguridad Democrática</h3>
+                        
                         </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
                         //url="https://magicforestworkshop.files.wordpress.com/2014/12/andromeda-galaxy.jpg" 
                         url={Image5}
-                        title="Pilar Cambio Climático y Gestión Integral de Riesgos" 
+                        
                         //subtittle="Andromeda " text="This galaxy" 
                         cardStyle="cardDiv"
                         CardDescriptionStyle="cardDescription"
                         videoId="5"
                         onShowVideo={this.showVideo} />
                         <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="headerPillar"> Pilar Cambio Climático y Gestión Integral de Riesgos</h3>
+                        
                         </Carousel.Caption>
                     </CarouselItem>
                     
