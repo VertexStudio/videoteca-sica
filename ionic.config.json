@@ -1,7 +1,0 @@
-{
-  "name": "Videoteca SICA",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
