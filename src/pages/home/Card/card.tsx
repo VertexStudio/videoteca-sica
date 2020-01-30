@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 //import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonIcon, IonItem, IonLabel, IonHeader } from '@ionic/react';
-import {IonCardSubtitle, IonCardTitle} from '@ionic/react';
+//import {IonCardSubtitle, IonCardTitle} from '@ionic/react';
 import './card.css'
 
 

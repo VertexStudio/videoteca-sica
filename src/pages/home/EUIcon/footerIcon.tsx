@@ -13,7 +13,7 @@ class FooterIcon extends Component < IProps, {} > {
         render(){
     
             return(
-                <img src={this.props.url} className={this.props.imgClass}></img>                  
+                <img alt="draw"src={this.props.url} className={this.props.imgClass}></img>                  
             ) ;
         }
             

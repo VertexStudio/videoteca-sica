@@ -3,7 +3,7 @@ import {Player} from 'video-react';
 import "./Player.css"
 import './video-react.css';
 import getModule from "./Switch";
-import Jumbotron from 'react-bootstrap/Jumbotron'
+//import Jumbotron from 'react-bootstrap/Jumbotron'
 
 interface IProps {
     url: string;
@@ -34,9 +34,9 @@ class VideoPlayer extends Component< IProps, {} > {
         
         return(
             <div className="video-container">                    
-                    <button onClick={this.props.onClose} className="backbutton">Regresar</button>
+                    <button onClick={this.props.onClose} >Regresar</button>
                     
-                    <img src="https://wallpaperaccess.com/full/391242.jpg" className="LogoVideo"></img>
+                    <img alt="draw" src="https://wallpaperaccess.com/full/391242.jpg" className="LogoVideo"></img>
                 
                 <Player
                     src={this.videoToPlay}
@@ -46,11 +46,11 @@ class VideoPlayer extends Component< IProps, {} > {
                 
                 
 
-                <img src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>
-                <img src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>
+                <img alt="draw" src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>
+                <img alt="draw" src="https://wallpaperaccess.com/full/391242.jpg" className="ImgText "></img>
 
 
-                <img src="https://wallpaperaccess.com/full/391242.jpg" className="Partner  "></img>
+                <img  alt="draw" src="https://wallpaperaccess.com/full/391242.jpg" className="Partner  "></img>
                     
                 
             </div>
