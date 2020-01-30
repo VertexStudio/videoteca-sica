@@ -5,3 +5,13 @@
 #container {
     height: 100%;
 }
+
+.carousel-control-prev-icon{
+    width: 100px !important;
+    height: 100px !important
+}
+
+.carousel-control-next-icon{
+    width: 100px !important;
+    height: 100px !important
+}
