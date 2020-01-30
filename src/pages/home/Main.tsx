@@ -4,14 +4,15 @@ import Jumbotron from "./header/Jumbotron";
 import Card from "./Card/card";
 import Player from "../video/player/Player";
 import FooterIcon from "./EUIcon/footerIcon"
-import Image1 from "./assets/Pilar1.jpg"
-import Image2 from "./assets/Pilar2.jpg"
-import Image3 from "./assets/Pilar3.jpg"
-import Image4 from "./assets/Pilar4.jpg"
-import Image5 from "./assets/Pilar5.jpg"
+import Image1 from "./assets/Pilar1.png"
+import Image2 from "./assets/Pilar2.png"
+import Image3 from "./assets/Pilar3.png"
+import Image4 from "./assets/Pilar4.png"
+import Image5 from "./assets/Pilar5.png"
 import Carousel from 'react-bootstrap/Carousel'
 import CarouselItem from 'react-bootstrap/CarouselItem';
 import "./Main.css"
+import footer from "./assets/FootWebPage.png";
 
 interface IMainState {
     showVideo: boolean;
@@ -62,10 +63,6 @@ class Home extends Component<{}, IMainState>{
                         CardDescriptionStyle="cardDescription"
                         videoId="1"
                         onShowVideo={this.showVideo} />
-                    <Carousel.Caption>
-                    <h3 className="headerPillar">Pilar Fortalecimiento Institucional</h3>
-                    
-                    </Carousel.Caption>
                     </CarouselItem>
                     
                     <CarouselItem>
@@ -79,10 +76,6 @@ class Home extends Component<{}, IMainState>{
                         CardDescriptionStyle="cardDescription"
                         videoId="2"
                         onShowVideo={this.showVideo} />
-                        <Carousel.Caption>
-                        <h3 className="headerPillar">Pilar de Integración Económica</h3>
-                        
-                        </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
@@ -94,10 +87,6 @@ class Home extends Component<{}, IMainState>{
                         CardDescriptionStyle="cardDescription"
                         videoId="3"
                         onShowVideo={this.showVideo} />
-                        <Carousel.Caption>
-                        <h3 className="headerPillar">Pilar de Integración Social</h3>
-                        
-                        </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
@@ -109,10 +98,6 @@ class Home extends Component<{}, IMainState>{
                         CardDescriptionStyle="cardDescription"
                         videoId="4"
                         onShowVideo={this.showVideo} />
-                        <Carousel.Caption>
-                        <h3 className="headerPillar">Pilar de Seguridad Democrática</h3>
-                        
-                        </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
                         <Card 
@@ -124,10 +109,6 @@ class Home extends Component<{}, IMainState>{
                         CardDescriptionStyle="cardDescription"
                         videoId="5"
                         onShowVideo={this.showVideo} />
-                        <Carousel.Caption>
-                        <h3 className="headerPillar"> Pilar Cambio Climático y Gestión Integral de Riesgos</h3>
-                        
-                        </Carousel.Caption>
                     </CarouselItem>
                     
                     
@@ -135,7 +116,7 @@ class Home extends Component<{}, IMainState>{
 
                 
                 <FooterIcon
-                    url="https://cdn.pixabay.com/photo/2013/07/13/01/09/european-union-155207_960_720.png"
+                    url={footer}
                     imgClass="footerImgClass"
 
                 />

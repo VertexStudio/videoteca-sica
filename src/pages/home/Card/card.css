@@ -16,7 +16,8 @@
     margin-right: 10vw; */    
     /*border-radius: 25px;    */
     /*border:solid #1f1d1d65 ;*/
-    border-radius: 30px;    
+    border-radius: 30px; 
+    padding: 0;  
   }
 
 
@@ -26,10 +27,6 @@
       height:auto;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-  }
-
-  img{
-  
   }
 
   .cardDescription{

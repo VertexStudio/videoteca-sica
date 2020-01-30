@@ -1,3 +1,7 @@
 .headerPillar{
     font-size: 32px !important;
 }
+
+#container {
+    height: 100%;
+}
