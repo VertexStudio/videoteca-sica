@@ -1,6 +1,8 @@
 import scene1 from "./assets/scene1.mp4"
 import scene2 from "./assets/scene2.mp4"
 import scene3 from "./assets/scene3.mp4"
+import scene4 from "./assets/scene4.mp4"
+import scene5 from "./assets/scene5.mp4"
 import img1 from "./assets/img/Pilar1.png"
 import img2 from "./assets/img/Pilar2.png"
 import img3 from "./assets/img/Pilar3.png"
@@ -19,8 +21,10 @@ export const getModule = (videoToPlay: string)=> {
             return scene2;
         case "3":
             return scene3;
-        // case "4":
-        //     return scene4;
+        case "4":
+            return scene4;
+        case "5":
+            return scene5;
         
     }
 }
