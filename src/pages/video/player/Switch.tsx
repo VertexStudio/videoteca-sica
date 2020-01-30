@@ -1,11 +1,11 @@
 import scene1 from "./assets/scene1.mp4"
 import scene2 from "./assets/scene2.mp4"
 import scene3 from "./assets/scene3.mp4"
-import img1 from "./assets/img/img1.jpg"
-import img2 from "./assets/img/img2.jpg"
-import img3 from "./assets/img/img3.jpg"
-import img4 from "./assets/img/img4.jpeg"
-import img5 from "./assets/img/img5.jpg"
+import img1 from "./assets/img/Pilar1.png"
+import img2 from "./assets/img/Pilar2.png"
+import img3 from "./assets/img/Pilar3.png"
+import img4 from "./assets/img/Pilar4.png"
+import img5 from "./assets/img/Pilar5.png"
 
 
 

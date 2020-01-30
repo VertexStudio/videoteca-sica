@@ -12,7 +12,7 @@ import Image5 from "./assets/Pilar5.png"
 import Carousel from 'react-bootstrap/Carousel'
 import CarouselItem from 'react-bootstrap/CarouselItem';
 import "./Main.css"
-import footer from "./assets/FootWebPage.png";
+import footer from "./assets/footer.png";
 
 interface IMainState {
     showVideo: boolean;

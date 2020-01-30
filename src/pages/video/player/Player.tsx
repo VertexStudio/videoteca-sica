@@ -3,6 +3,8 @@ import {Player} from 'video-react';
 import "./Player.css"
 import './video-react.css';
 import {getModule, getContentImg } from "./Switch";
+import header from "./assets/img/header.png"
+import footer from "./assets/img/footer.png"
 
 //import Jumbotron from 'react-bootstrap/Jumbotron'
 
@@ -39,7 +41,7 @@ class VideoPlayer extends Component< IProps, {} > {
             <div className="video-container">                    
                     
                     
-                    <img alt="draw" onClick={this.props.onClose} src="https://wallpaperaccess.com/full/391242.jpg" className="LogoVideo"></img>
+                    <img alt="draw" onClick={this.props.onClose} src={header} className="LogoVideo"></img>
                 
                 <Player
                     src={this.videoToPlay}
@@ -53,7 +55,7 @@ class VideoPlayer extends Component< IProps, {} > {
                 
 
 
-                <img  alt="draw" src="https://wallpaperaccess.com/full/391242.jpg" className="Partner  "></img>
+                <img  alt="draw" src={footer} className="Partner  "></img>
                     
                 
             </div>
