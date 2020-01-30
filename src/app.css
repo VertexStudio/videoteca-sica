@@ -7,6 +7,7 @@ body{
     position:initial !important;
     overflow: initial;   
     background-color: #ffffff;
+    line-height: 0px;
 }
 
 ion-app{
@@ -25,4 +26,9 @@ ion-app{
     margin-left: 32.5%;
     margin-top: 20px;
 
+}
+
+.carousel-indicators{ 
+margin-bottom:0px !important;
+margin-block-end: 0px !important;
 }
