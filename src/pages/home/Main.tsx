@@ -13,6 +13,9 @@ import Carousel from 'react-bootstrap/Carousel'
 import CarouselItem from 'react-bootstrap/CarouselItem';
 import "./Main.css"
 import footer from "./assets/footer.png";
+import header from "../video/player/assets/img/header.png"
+import Playerfooter from "../video/player/assets/img/footer.png"
+import {getModule, getContentImg } from "../video/player/Switch";
 
 interface IMainState {
     showVideo: boolean;
@@ -20,6 +23,8 @@ interface IMainState {
 }
 
 class Home extends Component<{}, IMainState>{
+    private videoToPlay = "";
+    private imagetoshow = "";
 
     constructor(props: any){
         super(props);
@@ -39,12 +44,18 @@ class Home extends Component<{}, IMainState>{
     }
 
     render(){
+        this.videoToPlay = getModule(this.state.currentVideo) as string;
+        this.imagetoshow = getContentImg(this.state.currentVideo) as string
 
         if (this.state.showVideo){
             return(
             <Player 
                 url={this.state.currentVideo}
                 onClose={this.backToHome}
+                header={header}
+                footer={Playerfooter}
+                videoToPlay={this.videoToPlay}
+                imagetoshow={this.imagetoshow}
                 />
             )
         }
